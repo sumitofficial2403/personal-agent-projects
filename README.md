@@ -1,4 +1,4 @@
-# Agent Reference System
+# PersonalAgents
 
 A spec-driven, multi-package reference system for AI agents.  
 Each package is an independent project with its own spec, plan, and task list.
