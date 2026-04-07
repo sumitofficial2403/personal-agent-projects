@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "description": "Agent reference system config. Update solution_root to point to your code folder.",
+
+  "solution_root": "/Users/sauravsingh/Desktop/Personal Project",
+
+  "projects_dir": "./projects",
+  "templates_dir": "./templates",
+
+  "active_projects": [
+    "coinbazar",
+    "catcygame"
+  ],
+
+  "package_doc_order": [
+    "SUMMARY.md",
+    "SPEC.md",
+    "PLANNING.md",
+    "IMPLEMENTATION.md"
+  ],
+
+  "agent_rules": {
+    "ask_on_doubt": true,
+    "no_assumptions": true,
+    "no_hallucination": true,
+    "confirm_before_destructive_actions": true
+  },
+
+  "notes": [
+    "Add new project folders under ./projects/ using the templates in ./templates/",
+    "Update active_projects list when adding a new project",
+    "Each project folder name should match the folder name inside solution_root",
+    "Pass this config file path OR any project subfolder path to the agent as reference"
+  ]
+}
