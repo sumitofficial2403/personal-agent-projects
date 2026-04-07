@@ -77,4 +77,21 @@ The agent should be passed either:
 - The root path of this folder (to access `agent-config.json` and all projects), or
 - A specific project subfolder path (e.g., `./projects/coinbazar/`) to scope to one project
 
-The `agent-config.json` at the root contains the path to the actual code (`solution_root`). Use it to resolve where the real source files live.
+---
+
+## Configuration: Single Root Folder
+
+**Always read `agent-config.json` first** before doing anything else. It is the single source of truth for paths.
+
+```
+agent-config.json
+  └── solution_root  ← the folder that contains ALL project code
+```
+
+Whenever you see `{solution_root}` in any doc (SPEC.md, PLANNING.md, etc.), replace it with the value of `solution_root` from `agent-config.json`.
+
+**Example:**
+- `solution_root` in config = `/Users/alice/code`
+- `{solution_root}/coinbazar/` in SPEC.md → resolves to `/Users/alice/code/coinbazar/`
+
+To point at a different code folder, **only update `solution_root` in `agent-config.json`**. Nothing else needs to change.

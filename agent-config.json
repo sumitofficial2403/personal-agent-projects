@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "description": "Agent reference system config. Update solution_root to point to your code folder.",
+  "description": "Agent reference system config. To change where your code lives, update solution_root — that is the ONLY field you need to change. All project code is expected at {solution_root}/{project_name}/.",
 
   "solution_root": "/Users/sauravsingh/Desktop/Personal Project",
 
